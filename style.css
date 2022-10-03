@@ -21,8 +21,7 @@ div img{
 
 .flex-container{
     display: flex;
-    max-width: 992px;
-    margin: auto;
+    justify-content: space-evenly;
     width: 100%;
     min-width: 320px;
 }
@@ -49,13 +48,13 @@ header .list-item{
 }
 
 header .menu{
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .apresentacao{
     height: 100vh;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .apresentacao .texto-apresentacao{
@@ -82,10 +81,14 @@ header .menu{
     margin-top: 10px;
 }
 
+.element-title {
+    margin-left: 5px;
+}
+
 #quem-somos{
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #quem-somos h2{
@@ -133,7 +136,7 @@ header .menu{
 
 .list-servicos{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
 }
 
@@ -181,7 +184,7 @@ header .menu{
 .list-planos{
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .item-planos{
@@ -244,7 +247,7 @@ footer{
 }
 
 footer .footer{
-    justify-content: space-between;
+    justify-content: space-evenly;
     color: #fff;
 }
 
@@ -253,21 +256,35 @@ footer .footer{
    
     .flex-container{
         flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .list-item {
+        align-self: center;
     }
 
     .apresentacao{
         flex-direction: column-reverse;
+
     }
 
     .apresentacao .texto-apresentacao{
         width: 100%;
      }
 
+     .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px auto;
+     }
+
      #quem-somos{
          flex-direction: column-reverse;
      }
 
-     #quem-somos img{`
+     #quem-somos img{
         min-width: 320px;
         margin: auto;
     }
